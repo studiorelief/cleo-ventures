@@ -1,0 +1,12 @@
+.swiper.is-hero {
+  mix-blend-mode: hard-light;
+}
+
+.swiper.is-hero .swiper-slide,
+.swiper.is-hero .hero_card {
+  transition-timing-function: var(--ease-power2-in-out);
+}
+
+.swiper.is-presentation {
+  overflow: visible !important;
+}

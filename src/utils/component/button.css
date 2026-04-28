@@ -1,0 +1,49 @@
+/* Pagination Buttons */
+
+.pagination_background {
+  opacity: 0;
+  transform: scale(0);
+  transition:
+    opacity 0.2s ease-out,
+    transform 0.2s ease-out;
+}
+
+.pagination_link:hover .pagination_background {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Button Link */
+
+.button_link_icon-bg {
+  opacity: 0;
+  transform: scale(0);
+  transition:
+    opacity 0.2s ease-out,
+    transform 0.2s ease-out;
+}
+
+.button_link_wrap:hover .button_link_icon-bg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.button_link_line-hover {
+  width: 0;
+  transition: width 0.2s ease-out;
+}
+
+.button_link_wrap:hover .button_link_line-hover {
+  width: 100%;
+}
+
+/* Button Nav */
+
+.nav_menu_line-hover {
+  width: 0;
+  transition: width 0.2s ease-out;
+}
+
+.nav_menu_link:hover .nav_menu_line-hover {
+  width: 100%;
+}

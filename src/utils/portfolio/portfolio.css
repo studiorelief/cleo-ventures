@@ -1,0 +1,113 @@
+/* Tabs */
+
+[tabs-icon='arrow'] {
+  transition: transform 0.2s ease-out;
+}
+
+.portfolio_form-filter_tabs-link.w--current [tabs-icon='arrow'] {
+  transform: rotate(180deg);
+}
+
+.portfolio_form-filter_tabs-link:not(.w--current) .portfolio_form-filter_tabs-line {
+  width: 0;
+  transition: width 0.2s ease-out;
+}
+
+.portfolio_form-filter_tabs-link.w--current .portfolio_form-filter_tabs-line {
+  width: 100%;
+  transition: width 0.2s ease-out;
+}
+
+/* Checkbox */
+
+.portfolio_form-filter_close-w {
+  display: flex;
+  width: 0rem;
+  transition: width 0.2s ease-out;
+}
+
+.portfolio_form-filter_checkbox {
+  padding-right: var(--_layout---spacing--small);
+  transition: padding-right 0.2s ease-out;
+}
+
+.portfolio_form-filter_checkbox.is-active-inputactive {
+  padding-right: var(--_layout---spacing--xxsmall);
+}
+
+.portfolio_form-filter_checkbox.is-active-inputactive .portfolio_form-filter_close-w {
+  width: 1rem;
+}
+
+/* Reset button */
+
+.portfolio_form-filter_reset-button:hover .portfolio_form-filter_close-w.is-button {
+  border-color: var(--_theme---border-color--brand);
+  transform: rotate(90deg);
+}
+
+/* Last item separator */
+
+.portfolio_cat_collection-item:last-child .portfolio_cat_separator {
+  display: none;
+}
+
+/* Line hover */
+
+.portfolio_grid-background {
+  margin-top: auto;
+  height: 0;
+  transition: height 0.3s ease-out;
+}
+
+.portfolio_collection-item:hover .portfolio_grid-background {
+  height: 100%;
+}
+
+.portfolio_project_title,
+.portfolio_project_link-wrapper {
+  transition:
+    margin-left 0.3s ease-out,
+    margin-right 0.3s ease-out;
+}
+
+.portfolio_collection-item:hover .portfolio_project_title {
+  margin-left: var(--_layout---spacing--large);
+}
+
+.portfolio_collection-item:hover .portfolio_project_link-wrapper {
+  margin-right: var(--_layout---spacing--large);
+}
+
+.portfolio_project_link-text {
+  transform: translateX(50%);
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.portfolio_collection-item:hover .portfolio_project_link-wrapper .portfolio_project_link-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.portfolio_project_link-icon-bg {
+  transform: scale(0);
+  background-color: transparent;
+  opacity: 0;
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.3s ease-out,
+    background-color 0.3s ease-out;
+}
+
+.portfolio_collection-item:hover .portfolio_project_link-wrapper .portfolio_project_link-icon-bg {
+  background-color: var(--_theme---background--alternate);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.portfolio_collection-item:hover .portfolio_project_link-icon {
+  color: var(--_theme---text-color--alternate);
+}
