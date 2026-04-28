@@ -1,3 +1,6 @@
-body {
-  background-color: red;
-}
+@import './utils/global/easing.css';
+@import './utils/portfolio/portfolio.css';
+@import './utils/component/button.css';
+@import './utils/sliders/sliders.css';
+@import './utils/animations/team.css';
+@import './utils/global/responsive.css';
