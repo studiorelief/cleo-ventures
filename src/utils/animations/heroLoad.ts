@@ -104,7 +104,7 @@ export const initHeroLoad = (): void => {
       'reveal'
     );
 
-    tl.addLabel('content', 'reveal+=0.8');
+    tl.addLabel('content', 'reveal+=1');
 
     tl.to(
       '.hero_component',
@@ -120,11 +120,10 @@ export const initHeroLoad = (): void => {
         split.lines,
         {
           yPercent: 0,
-          duration: 0.7,
+          duration: 1.2,
           ease: 'power3.out',
-          stagger: window.innerWidth < 479 ? 0.3 : 0.9,
         },
-        'reveal'
+        'content'
       );
     });
   });

@@ -10,7 +10,7 @@ export const initHeroSlider = (): Swiper[] => {
       new Swiper(element, {
         effect: 'fade',
         fadeEffect: { crossFade: true },
-        speed: 1200,
+        speed: 400,
         loop: true,
         allowTouchMove: false,
       })
