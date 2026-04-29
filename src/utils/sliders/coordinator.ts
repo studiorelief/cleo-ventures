@@ -1,6 +1,6 @@
 import type Swiper from 'swiper/bundle';
 
-const STAGGER_MS = 2000;
+const STAGGER_MS = 200000;
 
 export const startStaggeredSliders = (sliders: Swiper[]): void => {
   if (sliders.length === 0) return;

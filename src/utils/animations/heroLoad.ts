@@ -122,7 +122,7 @@ export const initHeroLoad = (): void => {
           yPercent: 0,
           duration: 0.7,
           ease: 'power3.out',
-          stagger: 0.9,
+          stagger: window.innerWidth < 479 ? 0.3 : 0.9,
         },
         'reveal'
       );

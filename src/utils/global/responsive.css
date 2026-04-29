@@ -10,4 +10,31 @@
     scroll-snap-align: start !important;
     flex: 0 0 auto !important;
   }
+
+  [scroll-animation='text-hero'] {
+    font-size: 2.75rem !important;
+  }
+}
+
+/* Attribute controle visibility in Component */
+@media (max-width: 479px) {
+  [hide='mobile-portrait'] {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  [hide='mobile-landscape'] {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  [hide='tablet'] {
+    display: none;
+  }
+}
+
+[hide='pc'] {
+  display: none;
 }
