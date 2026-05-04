@@ -10,3 +10,27 @@
 .swiper.is-presentation {
   overflow: visible !important;
 }
+
+@media (max-width: 479px) {
+  .swiper.is-team {
+    overflow: visible !important;
+  }
+
+  .swiper.is-team .swiper-wrapper {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    grid-template-columns: none !important;
+    grid-auto-columns: unset !important;
+    grid-column-gap: 0 !important;
+    grid-row-gap: 0 !important;
+    gap: 1rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .swiper.is-team .swiper-slide {
+    flex-shrink: 0 !important;
+    height: auto;
+    margin: 0 !important;
+  }
+}

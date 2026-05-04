@@ -1,0 +1,10 @@
+/* Prevent descenders (g, p, j, y, q) and ascenders from being clipped
+   by the overflow:hidden / mask:'lines' applied during SplitText animations.
+   Padding extends the clipping box; negative margin keeps layout intact. */
+.split-line,
+.split-line-mask {
+  padding-bottom: 0.15em;
+  margin-bottom: -0.15em;
+  padding-top: 0.05em;
+  margin-top: -0.05em;
+}

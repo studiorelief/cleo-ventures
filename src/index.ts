@@ -13,6 +13,7 @@ import { initTabsRefresh } from '$utils/global/tabsRefresh';
 import { startStaggeredSliders } from '$utils/sliders/coordinator';
 import { initHeroSlider } from '$utils/sliders/hero';
 import { initPresentationSlider } from '$utils/sliders/presentation';
+import { initTeamSlider } from '$utils/sliders/team';
 
 initFavicon();
 
@@ -30,5 +31,7 @@ window.Webflow.push(() => {
 
   const heroSliders = initHeroSlider();
   const presentationSliders = initPresentationSlider();
-  startStaggeredSliders([...heroSliders, ...presentationSliders]);
+  startStaggeredSliders(heroSliders, 2000);
+  startStaggeredSliders(presentationSliders, 4000);
+  initTeamSlider();
 });

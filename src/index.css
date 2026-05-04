@@ -3,4 +3,5 @@
 @import './utils/component/button.css';
 @import './utils/sliders/sliders.css';
 @import './utils/animations/team.css';
+@import './utils/animations/textReveal.css';
 @import './utils/global/responsive.css';

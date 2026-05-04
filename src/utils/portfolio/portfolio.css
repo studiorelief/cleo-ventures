@@ -111,3 +111,20 @@
 .portfolio_collection-item:hover .portfolio_project_link-icon {
   color: var(--_theme---text-color--alternate);
 }
+
+/* Mobile hover padding */
+
+@media (max-width: 767px) {
+  .portfolio_project_referals,
+  .portfolio_project_description {
+    transition:
+      padding-left 0.3s ease-out,
+      padding-right 0.3s ease-out;
+  }
+
+  .portfolio_collection-item:hover .portfolio_project_referals,
+  .portfolio_collection-item:hover .portfolio_project_description {
+    padding-left: var(--_layout---spacing--large);
+    padding-right: var(--_layout---spacing--large);
+  }
+}
