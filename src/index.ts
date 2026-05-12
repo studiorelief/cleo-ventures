@@ -19,7 +19,6 @@ initFavicon();
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  if (window.location.pathname === '/') initHeroLoad();
   initFooterYear();
   initMarker();
   initNavbarScroll();
@@ -31,7 +30,11 @@ window.Webflow.push(() => {
 
   const heroSliders = initHeroSlider();
   const presentationSliders = initPresentationSlider();
-  startStaggeredSliders(heroSliders, 2000);
+  if (window.location.pathname === '/') {
+    initHeroLoad().then(() => startStaggeredSliders(heroSliders, 2000));
+  } else {
+    startStaggeredSliders(heroSliders, 2000);
+  }
   startStaggeredSliders(presentationSliders, 4000);
   initTeamSlider();
 });
