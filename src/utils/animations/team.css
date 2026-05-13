@@ -22,3 +22,27 @@
   pointer-events: auto;
   transform: translateY(0%);
 }
+
+/* Filter animation */
+
+.team_form-filter_radio-active {
+  transform: scale(0);
+  /* opacity: 0; */
+  transition:
+    /* opacity 0.2s ease-out, */
+    background-color 0.2s ease-out,
+    transform 0.2s ease-out;
+}
+
+.team_form-filter_radio:hover .team_form-filter_radio-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  background-color: var(--brand--grey);
+}
+
+.team_form-filter_radio.is-active-inputactive .team_form-filter_radio-active {
+  transform: scale(1);
+  opacity: 1;
+  background-color: var(--brand--orange);
+}
