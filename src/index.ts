@@ -9,7 +9,7 @@ import { loadAttributesScripts } from '$utils/global/loadScript';
 import { initMarker } from '$utils/global/marker';
 import { initNavbarScroll } from '$utils/global/navbarScroll';
 import { initNavMobile } from '$utils/global/navMobile';
-import { initTabsRefresh } from '$utils/global/tabsRefresh';
+import { initScrollTriggerRefresh } from '$utils/global/scrollTriggerRefresh';
 import { getSliderConfig } from '$utils/sliders/config';
 import { startStaggeredSliders } from '$utils/sliders/coordinator';
 import { initHeroSlider } from '$utils/sliders/hero';
@@ -27,7 +27,7 @@ window.Webflow.push(() => {
   loadAttributesScripts();
   initTextReveal();
   initFooterReveal();
-  initTabsRefresh();
+  initScrollTriggerRefresh();
 
   const heroSliders = initHeroSlider();
   const presentationSliders = initPresentationSlider();

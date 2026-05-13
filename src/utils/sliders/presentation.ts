@@ -16,6 +16,8 @@ export const initPresentationSlider = (): Swiper[] => {
         speed: presentationSpeed,
         loop: true,
         allowTouchMove: true,
+        observer: true,
+        observeParents: true,
       })
   );
 };

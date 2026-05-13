@@ -16,6 +16,8 @@ export const initHeroSlider = (): Swiper[] => {
         speed: heroSpeed,
         loop: true,
         allowTouchMove: false,
+        observer: true,
+        observeParents: true,
       })
   );
 };

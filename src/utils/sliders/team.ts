@@ -52,6 +52,8 @@ const enableSwiper = (instance: TeamSliderInstance): void => {
     centeredSlides: true,
     loop: true,
     loopAdditionalSlides: 2,
+    observer: true,
+    observeParents: true,
     mousewheel: {
       forceToAxis: true,
       releaseOnEdges: true,
